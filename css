@@ -1,0 +1,78 @@
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: #f8f9fa;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #007bff;
+  color: white;
+}
+
+#searchInput {
+  padding: 10px;
+  width: 60%;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.filter-buttons {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background: #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: #007bff;
+  color: white;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+}
+
+.price {
+  color: #007bff;
+  font-weight: bold;
+}
