@@ -1,0 +1,30 @@
+The default line height has been increased for improved accessibility. You can choose to enable a more compact line height from the view settings menu.
+
+‎Product-Catalog/index.html‎
++26
+Lines changed: 26 additions & 0 deletions
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Catalog with Filter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Product Catalog</h1>
+    <input type="text" id="searchInput" placeholder="Search products..." />
+  </header>
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="electronics">Electronics</button>
+    <button class="filter-btn" data-category="fashion">Fashion</button>
+    <button class="filter-btn" data-category="home">Home</button>
+  </div>
+  <section class="product-list" id="productList"></section>
+  <script src="script.js"></script>
+</body>
+</html>
